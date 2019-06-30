@@ -1,3 +1,4 @@
+  /* tslint:disable:no-unused-variable */
 import * as functions from 'firebase-functions';
 
 // // Start writing Firebase Functions

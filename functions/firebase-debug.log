@@ -1,0 +1,30 @@
+[debug] [2019-06-28T13:13:04.391Z] ----------------------------------------------------------------------
+[debug] [2019-06-28T13:13:04.393Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-06-28T13:13:04.393Z] CLI Version:   7.0.2
+[debug] [2019-06-28T13:13:04.393Z] Platform:      darwin
+[debug] [2019-06-28T13:13:04.393Z] Node Version:  v10.16.0
+[debug] [2019-06-28T13:13:04.394Z] Time:          Fri Jun 28 2019 08:13:04 GMT-0500 (Central Daylight Time)
+[debug] [2019-06-28T13:13:04.394Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-28T13:13:04.417Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-28T13:13:04.417Z] > authorizing via signed-in user
+[debug] [2019-06-28T13:13:04.417Z] [iam] checking project instaclon-d3dac for permissions ["firebase.projects.get"]
+[debug] [2019-06-28T13:13:04.419Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-28T13:13:04.419Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-28T13:13:04.741Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-28T13:13:04.751Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instaclon-d3dac:testIamPermissions  
+
+[debug] [2019-06-28T13:13:05.207Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-28T13:13:05.208Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instaclon-d3dac  
+ 
+[debug] [2019-06-28T13:13:05.432Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-06-28T13:13:05.444Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/620233048551:getServerAppConfig  
+ 
+[debug] [2019-06-28T13:13:05.736Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/fleuryescudero/Documents/instaclon/functions" for Cloud Functions...
+[debug] [2019-06-28T13:13:05.981Z] Functions runtime initialized.
+[debug] [2019-06-28T13:13:05.981Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-28T13:13:06.259Z] firebase-admin has been stubbed.
