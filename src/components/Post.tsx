@@ -5,6 +5,7 @@ import Footer from './Footer';
 const style = {
     backgroundColor:  '#fff',
     border: '1px solid #ddd',
+    marginBottom:'10px',
     padding: '15px  15px',
 }
 interface IPostProps {
