@@ -6,7 +6,7 @@ import Button from './Button';
 import Center from './Center';
 import Input from './Input';
 
-class LoginForm extends React.Component < InjectedFormProps > {
+class RegisterForm extends React.Component < InjectedFormProps > {
 
     public render() {
 
@@ -28,11 +28,11 @@ class LoginForm extends React.Component < InjectedFormProps > {
                     component={Input}/>
                 <Button block={true}>Enviar</Button>
                 <Center>
-                    <Link to='/register'>Resgistrarse</Link>
+                    <Link to='/'>Iniciar Sesion</Link>
                 </Center>
             </form>
         )
     }
 }
 
-export default reduxForm({form: 'login'})(LoginForm);
+export default reduxForm({form: 'register'})(RegisterForm);

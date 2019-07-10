@@ -6,6 +6,7 @@ import * as ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
 import {Router} from 'react-router';
 import {applyMiddleware, combineReducers, createStore} from 'redux';
+import {reducer as formReducer} from 'redux-form';
 import thunk from 'redux-thunk';
 
 import App from './App';
@@ -14,14 +15,16 @@ import registerServiceWorker from './registerServiceWorker';
 import services from './services';
 
 const history = createHistory()
+
 const store = createStore(combineReducers({
-    ...reducers
-}),applyMiddleware(thunk.withExtraArgument(services)))
+    ...reducers,
+    form: formReducer
+}), applyMiddleware(thunk.withExtraArgument(services)))
 
 ReactDOM.render(
     <Provider store={store}>
     <Router history={history}>
-        <App/>
+        <App history={history}/>
     </Router>
 </Provider>, document.getElementById('root')as HTMLElement);
 registerServiceWorker();
